@@ -9,8 +9,8 @@ public class TokenValidation {
 	
 	@Test
 	public void token() {
-		String baseUrl = "https://gorest.co.in/";
-		String endpoint = "https://gorest.co.in/public/v2/users";
+		String baseUrl = "https://gorest.co.in";
+		String endpoint = "/public/v2/users";
 		Response response = RestAssured
 				.given()
 				.baseUri(baseUrl)
@@ -19,7 +19,8 @@ public class TokenValidation {
 
 		if (response.statusCode() == 200) {
 			System.out.println("Response Body: " + response.asString());
-			response.jsonPath().get("id");
+			Object ids = response.jsonPath().get("id");
+			System.out.println("IDs from response: " + ids);
 		} else {
 			System.out.println("Failed to fetch response: " + response.statusCode());
 			System.out.println(response.asString());
