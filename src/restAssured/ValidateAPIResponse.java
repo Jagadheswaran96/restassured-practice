@@ -1,5 +1,7 @@
 package restAssured;
 
+import org.testng.asserts.SoftAssert;
+
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 
@@ -10,6 +12,10 @@ public class ValidateAPIResponse {
 
         // Making a GET request
         Response response = RestAssured.get("/endpoint");
+        
+        SoftAssert softAssert = new SoftAssert();
+        softAssert.assertEquals(response.getStatusCode(), 200);
+        softAssert.assertAll();
 
         // Verify HTTP status code
         if (response.getStatusCode() == 200) {

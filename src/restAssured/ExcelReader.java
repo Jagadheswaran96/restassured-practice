@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.io.File;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Date;
 import java.util.List;
 import org.apache.poi.ss.usermodel.*;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
@@ -16,9 +17,11 @@ public class ExcelReader {
 		String fileName = "request.xlsx";
 		FileInputStream fis = new FileInputStream(new File(fileName));
 		Workbook wb = new XSSFWorkbook(fis);
-		Sheet sheet = wb.getSheetAt(0);
+		//		Sheet sheet = wb.getSheetAt(0);
+		Sheet sheet = wb.getSheet("Sheet1");
 
 		List<String[]> requestData = new ArrayList<>();
+
 
 		for (Row row : sheet) {
 
@@ -29,8 +32,12 @@ public class ExcelReader {
 		}
 
 		wb.close();
-//		Printing using forEach and Arrays.toString()
+		
 		requestData.forEach(array -> System.out.println(Arrays.toString(array)));
+
+		for (String[] data : requestData) {
+			System.out.println(Arrays.toString(data));
+		}
 
 
 	}

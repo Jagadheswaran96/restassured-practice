@@ -10,11 +10,11 @@ public class ExcelWriter {
 	public static void main(String[] args) throws IOException {
 
 		XSSFWorkbook wb = new XSSFWorkbook();
-        XSSFSheet sheet = wb.createSheet("Response");
+        XSSFSheet sheet = wb.createSheet("Sheet1");
 
         XSSFRow row = sheet.createRow(0);
         row.createCell(0).setCellValue("Username");
-        row.createCell(1).setCellValue("Response");
+        row.createCell(1).setCellValue("Status");
         row.createCell(2).setCellValue("Response");
 
         XSSFRow row1 = sheet.createRow(1);

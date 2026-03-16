@@ -5,7 +5,7 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 import org.junit.jupiter.api.Test;
 
-import io.restassured.RestAssured;
+import static io.restassured.RestAssured.*;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 
@@ -14,8 +14,7 @@ public class ApiChainingWithAssertionsTest {
     @Test
     public void testApiChaining() {
         // Step 1: Send a GET request to the first API and capture the response
-        Response firstApiResponse = RestAssured
-                .given()
+        Response firstApiResponse = given()
                 .baseUri("https://api.example.com")
                 .when()
                 .get("/firstApiEndpoint")
@@ -24,7 +23,7 @@ public class ApiChainingWithAssertionsTest {
                 .extract()
                 .response();
         // Assert that the response body is not null
-        assertNotNull(firstApiResponse.getBody(), "First API response body should not be null");
+        assertNotNull(firstApiResponse.getBody(), "API response body should not be null");
 
         // Step 2: Extract a value from the response (e.g., an ID or token)
         JsonPath jsonPathEvaluator = firstApiResponse.jsonPath();
@@ -37,8 +36,7 @@ public class ApiChainingWithAssertionsTest {
         System.out.println("Extracted Value: " + extractedValue);
 
         // Step 3: Use the extracted value as input for the second API request
-        Response secondApiResponse = RestAssured
-                .given()
+        Response secondApiResponse = given()
                 .baseUri("https://api.example.com")
                 .header("Content-Type", "application/json")
                 .body("{ \"inputId\": \"" + extractedValue + "\" }") // Use extracted value

@@ -29,8 +29,6 @@
 	<classpathentry kind="lib" path="F:/Eclipse/Jars/httpmime-4.5.2.jar"/>
 	<classpathentry kind="lib" path="F:/Eclipse/Jars/jarchivelib-1.1.0.jar"/>
 	<classpathentry kind="lib" path="F:/Eclipse/Jars/javax.mail.jar"/>
-	<classpathentry kind="lib" path="F:/Eclipse/Jars/json_simple.jar"/>
-	<classpathentry kind="lib" path="F:/Eclipse/Jars/json-20231013.jar"/>
 	<classpathentry kind="lib" path="F:/Eclipse/Jars/json-simple-1.1.1.jar"/>
 	<classpathentry kind="lib" path="F:/Eclipse/Jars/jsoup-1.13.1.jar"/>
 	<classpathentry kind="lib" path="F:/Eclipse/Jars/junit-jupiter-api-5.11.4.jar"/>
@@ -76,5 +74,14 @@
 	<classpathentry kind="lib" path="F:/Eclipse/Jars/httpcore5-5.4.jar"/>
 	<classpathentry kind="lib" path="F:/Eclipse/Jars/httpcore5-h2-5.4.jar"/>
 	<classpathentry kind="lib" path="F:/Eclipse/Jars/webdrivermanager-6.1.0.jar"/>
+	<classpathentry kind="lib" path="F:/Eclipse/Jars/rest-assured-5.3.0/assertj-core-3.27.7.jar"/>
+	<classpathentry kind="lib" path="F:/Eclipse/Jars/rest-assured-5.3.0/json-schema-validator-1.5.8.jar"/>
+	<classpathentry kind="lib" path="F:/Eclipse/Jars/rest-assured-5.3.0/json-schema-validator-1.5.8-sources.jar"/>
+	<classpathentry kind="lib" path="F:/Eclipse/Jars/rest-assured-5.3.0/assertj-guava-3.27.7.jar"/>
+	<classpathentry kind="lib" path="F:/Eclipse/Jars/rest-assured-5.3.0/json-unit-assertj-4.1.1.jar"/>
+	<classpathentry kind="lib" path="F:/Eclipse/Jars/rest-assured-5.3.0/json-unit-assertj-4.1.1-sources.jar"/>
+	<classpathentry kind="lib" path="F:/Eclipse/Jars/json_simple.jar"/>
+	<classpathentry kind="lib" path="F:/Eclipse/Jars/json-20231013.jar"/>
+	<classpathentry kind="lib" path="F:/Eclipse/Jars/rest-assured-5.3.0/hamcrest-3.0.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

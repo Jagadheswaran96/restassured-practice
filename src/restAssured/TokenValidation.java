@@ -2,7 +2,7 @@ package restAssured;
 
 import org.testng.annotations.Test;
 
-import io.restassured.RestAssured;
+import static io.restassured.RestAssured.*;
 import io.restassured.response.Response;
 
 public class TokenValidation {
@@ -11,8 +11,7 @@ public class TokenValidation {
 	public void token() {
 		String baseUrl = "https://gorest.co.in";
 		String endpoint = "/public/v2/users";
-		Response response = RestAssured
-				.given()
+		Response response = given()
 				.baseUri(baseUrl)
 				.header("Content-Type", "application/json")
 				.get(endpoint);
