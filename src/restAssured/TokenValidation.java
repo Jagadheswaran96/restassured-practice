@@ -1,5 +1,8 @@
 package restAssured;
 
+import static org.testng.Assert.assertNotNull;
+
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import static io.restassured.RestAssured.*;
@@ -24,5 +27,9 @@ public class TokenValidation {
 			System.out.println("Failed to fetch response: " + response.statusCode());
 			System.out.println(response.asString());
 		}
+		
+		//Retry-After refers after how many time interval next request should be sent
+		String retryAfter = response.getHeader("Retry-After");
+        System.out.println("received 429 with Retry-After: " + retryAfter);
 	}
 }

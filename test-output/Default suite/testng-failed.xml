@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="restAssured.TokenValidation">
+      <class name="restAssured.RestfulTest">
         <methods>
-          <include name="token"/>
+          <include name="getToken"/>
         </methods>
-      </class> <!-- restAssured.TokenValidation -->
+      </class> <!-- restAssured.RestfulTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

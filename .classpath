@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry kind="src" path="src"/>
+	<classpathentry including="**/*.java" kind="src" output="target/classes" path="src">
+		<attributes>
+			<attribute name="optional" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-17">
 		<attributes>
-			<attribute name="module" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="lib" path="F:/Eclipse/Jars/activation.jar"/>
@@ -52,9 +57,6 @@
 	<classpathentry kind="lib" path="F:/Eclipse/Jars/rest-assured-5.3.0/json-path-5.3.0.jar"/>
 	<classpathentry kind="lib" path="F:/Eclipse/Jars/rest-assured-5.3.0/json-path-5.3.0-javadoc.jar"/>
 	<classpathentry kind="lib" path="F:/Eclipse/Jars/rest-assured-5.3.0/json-path-5.3.0-sources.jar"/>
-	<classpathentry kind="lib" path="F:/Eclipse/Jars/rest-assured-5.3.0/rest-assured-5.3.0.jar"/>
-	<classpathentry kind="lib" path="F:/Eclipse/Jars/rest-assured-5.3.0/rest-assured-5.3.0-javadoc.jar"/>
-	<classpathentry kind="lib" path="F:/Eclipse/Jars/rest-assured-5.3.0/rest-assured-5.3.0-sources.jar"/>
 	<classpathentry kind="lib" path="F:/Eclipse/Jars/rest-assured-5.3.0/groovy-4.0.28/groovy-4.0.28.jar"/>
 	<classpathentry kind="lib" path="F:/Eclipse/Jars/rest-assured-5.3.0/xml-path-5.3.0.jar"/>
 	<classpathentry kind="lib" path="F:/Eclipse/Jars/rest-assured-5.3.0/xml-path-5.3.0-javadoc.jar"/>
@@ -63,9 +65,6 @@
 	<classpathentry kind="lib" path="F:/Eclipse/Jars/rest-assured-5.3.0/jackson-core-2.17.2.jar"/>
 	<classpathentry kind="lib" path="F:/Eclipse/Jars/rest-assured-5.3.0/jackson-databind-2.17.2.jar"/>
 	<classpathentry kind="con" path="org.testng.TESTNG_CONTAINER"/>
-	<classpathentry kind="lib" path="F:/Eclipse/Jars/rest-assured-5.3.0/rest-assured-common-5.3.0.jar"/>
-	<classpathentry kind="lib" path="F:/Eclipse/Jars/rest-assured-5.3.0/rest-assured-common-5.3.0-javadoc.jar"/>
-	<classpathentry kind="lib" path="F:/Eclipse/Jars/rest-assured-5.3.0/rest-assured-common-5.3.0-sources.jar"/>
 	<classpathentry kind="lib" path="F:/Eclipse/Jars/rest-assured-5.3.0/groovy-4.0.28/groovy-json-4.0.28.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/5"/>
 	<classpathentry kind="lib" path="F:/Eclipse/Jars/slf4j-api-2.0.15.jar"/>
@@ -83,5 +82,16 @@
 	<classpathentry kind="lib" path="F:/Eclipse/Jars/json_simple.jar"/>
 	<classpathentry kind="lib" path="F:/Eclipse/Jars/json-20231013.jar"/>
 	<classpathentry kind="lib" path="F:/Eclipse/Jars/rest-assured-5.3.0/hamcrest-3.0.jar"/>
-	<classpathentry kind="output" path="bin"/>
+	<classpathentry kind="lib" path="F:/Eclipse/Jars/rest-assured-5.4.0/rest-assured-5.4.0.jar"/>
+	<classpathentry kind="lib" path="F:/Eclipse/Jars/rest-assured-5.4.0/rest-assured-5.4.0-javadoc.jar"/>
+	<classpathentry kind="lib" path="F:/Eclipse/Jars/rest-assured-5.4.0/rest-assured-5.4.0-sources.jar"/>
+	<classpathentry kind="lib" path="F:/Eclipse/Jars/rest-assured-5.4.0/rest-assured-common-5.4.0.jar"/>
+	<classpathentry kind="lib" path="F:/Eclipse/Jars/rest-assured-5.4.0/rest-assured-common-5.4.0-javadoc.jar"/>
+	<classpathentry kind="lib" path="F:/Eclipse/Jars/rest-assured-5.4.0/rest-assured-common-5.4.0-sources.jar"/>
+	<classpathentry kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="output" path="target/classes"/>
 </classpath>
